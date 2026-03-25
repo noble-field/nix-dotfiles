@@ -6,7 +6,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     remote-repo = {
-      url = "github:noble-field/nix-dotfiles.git";
+      url = "github:noble-field/nix-dotfiles";
       flake = false;
     };
   };
