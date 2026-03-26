@@ -10,6 +10,11 @@ require('gitsigns').setup({
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 
+    vim.opt.termguicolors = true
+    vim.api.nvim_set_hl(0, 'GitSignsAdd',    { fg = '#10B981' })
+    vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#F59E0B' })
+    vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#EF4444' })
+
     local function map(mode, l, r, opts)
       opts = opts or {}
       opts.buffer = bufnr

@@ -30,9 +30,6 @@ vim.cmd([[
   hi CursorLineNr ctermbg=8 ctermfg=172
   hi clear CursorLine
   hi SignColumn ctermbg=black
-  hi GitGutterAdd ctermfg=green
-  hi GitGutterChange ctermfg=blue
-  hi GitGutterDelete ctermfg=red
   hi Pmenu ctermbg=white ctermfg=black
   hi PmenuSel ctermbg=cyan ctermfg=black
 ]])
