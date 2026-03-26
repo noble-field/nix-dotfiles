@@ -31,9 +31,9 @@
     syntaxHighlighting.enable = true;
 
     initContent =
-      builtins.readFile "${inputs.remote-repo}/configs/zsh/.zshrc" +
+      builtins.readFile "${inputs.repo-root}/configs/zsh/.zshrc" +
       "\n" +
-      builtins.readFile "${inputs.remote-repo}/configs/zsh/fzf.zsh";
+      builtins.readFile "${inputs.repo-root}/configs/zsh/fzf.zsh";
   };
 
   programs.starship = {

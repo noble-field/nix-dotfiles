@@ -6,8 +6,8 @@
   home.stateVersion = "25.11";
 
   imports = [
-    "${inputs.remote-repo}/modules/common.nix"
-    "${inputs.remote-repo}/modules/languages.nix"
+    "${inputs.repo-root}/modules/common.nix"
+    "${inputs.repo-root}/modules/languages.nix"
   ];
 
   languages = {

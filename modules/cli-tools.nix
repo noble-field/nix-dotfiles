@@ -10,7 +10,7 @@
     (writeShellApplication {
       name = "clip";
       runtimeInputs = [ coreutils ];
-      text = builtins.readFile "${inputs.remote-repo}/configs/commands/clip.sh";
+      text = builtins.readFile "${inputs.repo-root}/configs/commands/clip.sh";
     })
   ];
 

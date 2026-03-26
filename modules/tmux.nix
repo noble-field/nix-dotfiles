@@ -23,6 +23,6 @@
       resurrect
     ];
 
-    extraConfig = builtins.readFile "${inputs.remote-repo}/configs/tmux/.tmux.conf";
+    extraConfig = builtins.readFile "${inputs.repo-root}/configs/tmux/.tmux.conf";
   };
 }

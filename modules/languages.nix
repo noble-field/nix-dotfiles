@@ -1,7 +1,7 @@
 { inputs, ... }:
 {
   imports = [
-    "${inputs.remote-repo}/modules/cpp.nix"
-    "${inputs.remote-repo}/modules/python.nix"
+    "${inputs.repo-root}/modules/cpp.nix"
+    "${inputs.repo-root}/modules/python.nix"
   ];
 }

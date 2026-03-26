@@ -5,8 +5,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    remote-repo = {
-      url = "github:noble-field/nix-dotfiles";
+    repo-root = {
+      url = "path:.";
       flake = false;
     };
   };
@@ -17,7 +17,7 @@
       "ubuntu-server" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs; };
-        modules = [ "${inputs.remote-repo}/users/ubuntu-server.nix"];
+        modules = [ "${inputs.repo-root}/users/ubuntu-server.nix"];
       };
 
     };

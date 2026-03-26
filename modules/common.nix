@@ -2,10 +2,10 @@
 
 {
   imports = [
-    "${inputs.remote-repo}/modules/shell.nix"
-    "${inputs.remote-repo}/modules/tmux.nix"
-    "${inputs.remote-repo}/modules/nvim.nix"
-    "${inputs.remote-repo}/modules/git.nix"
-    "${inputs.remote-repo}/modules/cli-tools.nix"
+    "${inputs.repo-root}/modules/shell.nix"
+    "${inputs.repo-root}/modules/tmux.nix"
+    "${inputs.repo-root}/modules/nvim.nix"
+    "${inputs.repo-root}/modules/git.nix"
+    "${inputs.repo-root}/modules/cli-tools.nix"
   ];
 }

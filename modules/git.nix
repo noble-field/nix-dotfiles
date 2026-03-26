@@ -17,7 +17,7 @@
     {
       plugin = gitsigns-nvim;
       type = "lua";
-      config = builtins.readFile "${inputs.remote-repo}/configs/nvim/gitsigns-nvim.lua";
+      config = builtins.readFile "${inputs.repo-root}/configs/nvim/gitsigns-nvim.lua";
     }
   ];
 

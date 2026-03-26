@@ -15,7 +15,7 @@
       {
         plugin = nvim-tree-lua;
         type = "lua";
-        config = builtins.readFile "${inputs.remote-repo}/configs/nvim/nvim-tree.lua";
+        config = builtins.readFile "${inputs.repo-root}/configs/nvim/nvim-tree.lua";
       }
       nvim-lspconfig
       nvim-cmp
@@ -27,7 +27,7 @@
       nil
     ];
 
-    initLua = builtins.readFile "${inputs.remote-repo}/configs/nvim/init.lua";
+    initLua = builtins.readFile "${inputs.repo-root}/configs/nvim/init.lua";
   };
 
 }
